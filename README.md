@@ -27,17 +27,17 @@ This project is trained and simulated using the **official server telemetry data
 
 ## 📁 Project Structure
 
-greenpulse/
-├── greenpulse/                # Core application source
-│   ├── database/              # MongoDB connection wrappers
-│   ├── features/              # Analysis pipelines (Anomaly, Prediction, Shifting)
-│   ├── pages/                 # Streamlit dashboard pages
-│   ├── pipeline/              # Ingestion and cleaning pipelines
-│   ├── alerts.py              # Alarm thresholds and notification system
-│   ├── app.py                 # Streamlit main entry point
-│   ├── config.py              # Constant configurations and DB URI
-│   ├── dataset.csv            # Copy of the raw telemetry dataset
-│   └── requirements.txt       # Project python dependencies
-├── dataset.csv                # Root dataset file (Lenovo)
-├── simulator.py               # Live telemetry generator
-└── train_model.py             # Offline ML model training script
+* 📂 **`greenpulse/`** — Root repository directory
+  * 📂 **`greenpulse/`** — Main application source code
+    * 📂 **`database/`** — MongoDB interface and configuration wrappers
+    * 📂 **`features/`** — Analysis modules (anomaly detection, predictive modeling, shifting)
+    * 📂 **`pages/`** — Streamlit dashboard sub-pages and charts
+    * 📂 **`pipeline/`** — Data ingestion and cleaning pipeline
+    * 📄 **`alerts.py`** — Alert warning thresholds and logic
+    * 📄 **`app.py`** — Streamlit frontend web app entry point
+    * 📄 **`config.py`** — Constant configurations and DB parameters
+    * 📄 **`dataset.csv`** — Cleaned copy of server telemetry dataset
+    * 📄 **`requirements.txt`** — Core package dependencies list
+  * 📄 **`dataset.csv`** — Official raw fleet telemetry dataset (provided by Lenovo)
+  * 📄 **`simulator.py`** — Live real-time server telemetry streamer
+  * 📄 **`train_model.py`** — Offline machine learning training pipeline
